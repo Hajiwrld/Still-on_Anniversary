@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>For Ayoni ❤️</title><link href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap' rel='stylesheet'><style>
+body{margin:0;font-family:'Playfair Display',serif;font-style:italic;background:linear-gradient(135deg,#0b3d91,#1e90ff,#87cefa);overflow:hidden;color:#fff}
+#bg{position:fixed;inset:0}.heart{position:fixed;bottom:-40px;animation:up linear forwards}.petal{position:fixed;top:-30px;animation:down linear forwards}
+@keyframes up{to{transform:translateY(-120vh)}}
+@keyframes down{to{transform:translateY(120vh) rotate(360deg)}}
+.wrap{display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px}
+.card{max-width:760px;background:rgba(255,255,255,.14);backdrop-filter:blur(12px);padding:40px;border-radius:24px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+#text{min-height:220px;white-space:pre-wrap;font-size:1.3rem;line-height:1.8}
+button{padding:12px 24px;border-radius:25px;border:none;background:#ff5ca8;color:#fff;font-size:1rem}
+</style></head><body><div id='bg'></div><div class='wrap'><div class='card'><h1>💙 Big Head ❤️</h1><div id='text'></div><p><b>Forever Yours,<br>❤️ Hajibobo ❤️</b></p><button onclick="alert('I will always choose you. ❤️')">Open My Heart 💌</button></div></div><script>
+const msg=`Thank you for being my safe place, my greatest joy, and my favorite person. 😚 No matter where life takes us, I promise to keep choosing you, standing by you, and loving you with all my heart. 😚🧡
+
+You are more than my girlfriend—you are my happiness. I can't wait to create many more memories with you and celebrate countless anniversaries together. 🤭🥰
+
+I'll always choose and love you Ayoni. 🤭❤️`;
+let i=0;const t=document.getElementById('text');(function type(){if(i<msg.length){t.textContent+=msg[i++];setTimeout(type,35);}})();
+setInterval(()=>{let h=document.createElement('div');h.className='heart';h.textContent=['❤️','💙','💖','💕'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(18+Math.random()*24)+'px';h.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),10000);},250);
+setInterval(()=>{let p=document.createElement('div');p.className='petal';p.textContent='🌹';p.style.left=Math.random()*100+'vw';p.style.animationDuration=(6+Math.random()*5)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),12000);},700);
+</script></body></html>
